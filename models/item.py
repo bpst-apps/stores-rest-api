@@ -16,6 +16,9 @@ class ItemModel(db.Model):
         unique=True, 
         nullable=False
     )
+    description = db.Column(
+        db.String
+    )
     price = db.Column(
         db.Float(precision=2), 
         unique=False, 
