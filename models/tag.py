@@ -30,5 +30,5 @@ class TagModel(db.Model):
     items = db.relationship(
         "ItemModel",
         back_populates="tags",
-        secondary="item_tags"
+        secondary="items_tags"
     )
